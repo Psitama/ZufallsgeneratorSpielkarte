@@ -20,20 +20,21 @@ let cards = [
 ];
 
 //Forcieren von Karte
-let clicks = 3
+let clicks = 0;
 
 
 //Funktion
 function generateCard() {
 
-let clicks++
+clicks++
 
 let index = Math.floor(Math.random() * cards.length);
 let card = cards[index];
 
-if click == 3
-let card = "♦️5"
-let clicks = 0
+if (clicks == 3) {
+    card = "♦️5";
+    clicks = 0;
+}
 
 document.getElementById("output").innerText = "Deine Karte: " + card;
 
