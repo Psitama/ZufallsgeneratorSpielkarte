@@ -2,9 +2,10 @@ Karten Zufallsgenerator
 
 <h1>♠️Karten Zufallsgenerator♦️</h1>
 <button onclick="generateCard()">Generieren!</button>
-<div> id="output">Deine Karte: </div>
+<div id="output">Deine Karte: </div>
 
 <script>
+// Kartenliste
 let cards = [
 "♠️2",
 "♥️K",
@@ -13,9 +14,14 @@ let cards = [
 "♥️D"
 ];
 
+//Funktion
 function generateCard() {
-Math.random()
-Math.floor()
-cards[index]
+
+let index = Math.floor(Math.random() * cards.length);
+let card = cards[index];
+
+document.getElementById("output").innerText = "Deine Karte: " + card;
+
 }
 
+</script>
