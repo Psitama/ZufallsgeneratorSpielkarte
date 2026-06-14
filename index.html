@@ -2,14 +2,39 @@ Karten Zufallsgenerator
 
 <h1>♠️Karten Zufallsgenerator♦️</h1>
 <button onclick="generateCard()">Generieren!</button>
+<div id="card" >♦️ </div>
 <div id="output">Deine Karte: </div>
+
+<style>
+body {
+    background: #121212;
+    color: white;
+    text-align: center;
+    font-family: Arial;
+}
+
+#card {
+    font-size: 100px;
+    margin: 30px;
+}
+
+button {
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+#output {
+    margin-top: 20px;
+    font-size: 24px;
+}
+</style>
 
 <script>
 // Kartenliste
 let cards = [
 "♠️2",
 "♥️K",
-"♦️5",
 "♣️7",
 "♥️D",
 "Herz 10",
