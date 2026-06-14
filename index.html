@@ -75,9 +75,10 @@ document.getElementById("title").onclick = function() {
     secretClicks++;
 
     if (secretClicks == 5) {
-        alert("Verstecktes Menü aktiviert");
-        secretClicks = 0;
-    }
+
+    document.getElementById("menu").style.display = "block";
+
+    secretClicks = 0;
 
 };
 
