@@ -69,20 +69,6 @@ let secretClicks =0;
 //Funktion
 function generateCard() {
 document.getElementById("forceCard").style.display = "none";
-};
-
-document.getElementById("title").onclick = function() {
-};
-
-    secretClicks++;
-
-    if (secretClicks == 5) {
-
-    document.getElementById("menu").style.display = "block";
-
-    secretClicks = 0;
-
-};
 
 clicks++
 
@@ -98,5 +84,19 @@ if (clicks == 3) {
 document.getElementById("output").innerText = "Deine Karte: " + card;
 document.getElementById("card").innerText = card;
 }
+
+document.getElementById("title").onclick = function() {
+
+
+    secretClicks++;
+
+    if (secretClicks == 5) {
+
+    document.getElementById("menu").style.display = "block";
+
+    secretClicks = 0;
+
+};
+
 
 </script>
