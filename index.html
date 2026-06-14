@@ -1,5 +1,5 @@
 <h1>♠️Karten Zufallsgenerator♦️</h1>
-<img src="images/image.jpg" width="250">
+<img id="forceCard" src="images/image.jpg">
 <button onclick="generateCard()">Generieren!</button>
 <div id="card" >♦️ </div>
 <div id="output">Deine Karte: </div>
@@ -55,6 +55,7 @@ let clicks = 0;
 
 //Funktion
 function generateCard() {
+document.getElementById("forceCard").style.display = "none";
 
 clicks++
 
@@ -64,6 +65,7 @@ let card = cards[index];
 if (clicks == 3) {
     card = "♦️5";
     clicks = 0;
+    document.getElementById("forceCard").style.display = "block";
 }
 
 document.getElementById("output").innerText = "Deine Karte: " + card;
