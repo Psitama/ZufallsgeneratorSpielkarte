@@ -87,18 +87,26 @@ document.getElementById("card").innerText = card;
 
 document.getElementById("title").onclick = function() {
 
+    if (document.getElementById("menu").style.display == "block") {
 
-    secretClicks++;
+        document.getElementById("menu").style.display = "none";
 
-    if (secretClicks == 5) {
+    } else {
 
-    alert("⚙️ Magier-Modus aktiviert");
+        secretClicks++;
 
-    document.getElementById("menu").style.display = "block";
+        if (secretClicks == 5) {
 
-    secretClicks = 0;
-    
+            alert("⚙️ Magier-Modus aktiviert");
+
+            document.getElementById("menu").style.display = "block";
+
+            secretClicks = 0;
+
+        }
+
     }
+
 };
 
 </script>
